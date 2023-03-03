@@ -1,0 +1,38 @@
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 0 25px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #EBEFF2;
+    background-color: white;
+    z-index: 1;
+}
+.header__title{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #3498DB;
+    flex-basis: 90%;
+}
+.header__profile{
+    flex-basis: 10%;
+}
+.bell-icon{
+    padding: 20px 20px;
+    cursor: pointer;
+}
+.bell-icon:hover{
+    color: #3498DB;
+}
+.svg-avatar{
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    top: 15px;
+    cursor: pointer;
+}
+.svg-hidden{
+    max-width: 0;
+}

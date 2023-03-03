@@ -1,0 +1,57 @@
+.carousel {
+    width: 482px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .carousel-toolbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 0 20px;
+  }
+  .btn-left, .btn-right{
+    height: 80px;
+    width: 40px;
+    background-color: rgba(230, 230, 230, 0.5);
+    border: none;
+  }
+  .btn-left{
+    content: '&lt;';
+  }
+  
+  .carousel__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease;
+  }
+  
+  .carousel__card {
+    min-width: 482px;
+    height: 350px;
+    margin-right: 1rem;
+    display: inline-block;
+  }
+  .card-1{
+    background: url('../images/carousel-1.png');
+    object-fit: contain;
+  }
+  .card-2{
+    background: url('../images/carousel-2.png');
+  }
+  .card-3{
+    background: url('../images/carousel-3.png');
+  }
+  .card-4{
+    background: url('../images/carousel-4.png');
+  }

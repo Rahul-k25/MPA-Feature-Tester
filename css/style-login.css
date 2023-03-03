@@ -1,0 +1,114 @@
+body{
+    font-family: 'Poppins';
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}
+.container__left{
+    flex-basis: 60%;
+}
+
+.container__right{
+    flex-basis: 40%;
+}
+.svg-background{
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%; 
+    width:65%
+}
+.svg-netcracker{
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    top: 32px;
+    left: 32px;
+}
+
+.container__title{
+    position: absolute;
+    top: 32px;
+    font-weight: 500;
+    font-size: 40px;
+}
+.title-left{
+    left: 108px;
+    color: #FFFFFF;
+}
+.title-right{
+    right: 32px;
+    color: #3498DB;
+}
+
+
+.login-form{
+    width: 302px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 40%;
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.01em;
+    color: #323C47;
+    padding-bottom: 10px;
+}
+.form__label{
+    padding: 10px 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #7F8C8D;
+}
+.form__username,
+.form__password{
+    width: 302px;
+    padding-bottom: 5px;
+    outline: 0;
+    border-width: 0 0 1px;
+    font-size: 16px;
+}
+
+.form__button{
+    color: white;
+    background: #3498DB;
+    border: 1px solid #2980B9;
+    box-shadow: 0px 4px 10px rgba(52, 152, 219, 0.3);
+    border-radius: 4px;
+    margin: 16px 107px;
+    font-size: 14px;
+    padding: 5px 25px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.form__button:hover{
+    transform: scale(1.1);
+    background-color: #35a4ef;
+}
+.form--footer{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #4C5862;
+    text-align: center;
+}
+.form--link{
+    color: #3498DB;
+    cursor: pointer;
+}
+.form--link:hover{
+    color: #8ecaf3;
+}
+.svg-hidden{
+    max-width: 0;
+}
