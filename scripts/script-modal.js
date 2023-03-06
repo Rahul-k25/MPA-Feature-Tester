@@ -1,4 +1,4 @@
-function showModal(titleHtml, contentHtml, buttons) {
+function showModal(titleHtml, contentHtml) {
     const modal = document.createElement('div');
   
     modal.classList.add('modal');
@@ -23,8 +23,12 @@ function showModal(titleHtml, contentHtml, buttons) {
         </div>
     `;
   
-    const times = modal.querySelector('.modal__close');
-    times.addEventListener('click', () => document.body.removeChild(modal));
+    const close = modal.querySelector('.modal__close');
+    close.addEventListener('click', () => {
+        document.body.removeChild(modal)
+        document.querySelector(".header").style.filter = "blur(0)";
+        document.querySelector(".sidebar").style.filter = "blur(0)";
+    });
     document.body.appendChild(modal);
   }
   
@@ -40,24 +44,11 @@ function showModal(titleHtml, contentHtml, buttons) {
         <option value="" disabled selected>Assignee</option>
     </select>
   `;
-  const msgPayload = [
-    {
-      label: 'Got it!',
-      onClick: (modal) => console.log('The button was clicked!'),
-      triggerClose: false,
-    },
-    {
-      label: 'Decline',
-      onClick: (modal) => console.log('DECLINED.'),
-      triggerClose: false,
-    },
-  ];
-  
+
   document.querySelector('.modal__button').addEventListener('click', () => {
-    showModal(msgModal, msgElement, msgPayload);
+    showModal(msgModal, msgElement);
     document.querySelector(".header").style.background = "#00000004";
     document.querySelector(".sidebar").style.background = "#00000004";
-    // document.querySelector(".header").style.filter= "blur(2px)";
-    // document.querySelector(".sidebar").style.filter = "blur(2px)";
-    // document.body.style.filter = "blur(2px)";
+    document.querySelector(".header").style.filter = "blur(5px)";
+    document.querySelector(".sidebar").style.filter = "blur(5px)";
   });

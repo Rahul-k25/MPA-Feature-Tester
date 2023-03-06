@@ -144,7 +144,8 @@ body{
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    background: #00000080;
+    background: #00000050;
+    backdrop-filter: blur(5px);
     font-family: 'Poppins';
     color: #7F8C8D;
 }
