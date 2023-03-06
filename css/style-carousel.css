@@ -42,16 +42,3 @@
     margin-right: 1rem;
     display: inline-block;
   }
-  .card-1{
-    background: url('../images/carousel-1.png');
-    object-fit: contain;
-  }
-  .card-2{
-    background: url('../images/carousel-2.png');
-  }
-  .card-3{
-    background: url('../images/carousel-3.png');
-  }
-  .card-4{
-    background: url('../images/carousel-4.png');
-  }

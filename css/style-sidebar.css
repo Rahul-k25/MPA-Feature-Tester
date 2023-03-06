@@ -26,7 +26,7 @@ a {
   position: fixed;
   top: 57px;
   left: -30%;
-    width: var(--nav-width);
+  width: var(--nav-width);
   height: 100vh;
   background-color: var(--first-color);
   padding: 0.5rem 1rem 0 0;

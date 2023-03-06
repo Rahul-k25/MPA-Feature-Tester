@@ -1,0 +1,63 @@
+function showModal(titleHtml, contentHtml, buttons) {
+    const modal = document.createElement('div');
+  
+    modal.classList.add('modal');
+    modal.innerHTML = `
+        <div class="modal__inner">
+            <div class="modal__top">
+                <div class="modal__title">${titleHtml}</div>
+                <button class="modal__close" type="button">
+                    <span>Cancel</span><svg class="svg-icons">
+                        <use xlink:href="#svg-cancel"></use>
+                    </svg>
+                </button>
+                <span>|</span>
+                <button class="modal__close" type="button">
+                    <span>Save</span><svg class="svg-icons">
+                        <use xlink:href="#svg-save"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__content">${contentHtml}</div>
+            <div class="modal__bottom"></div>
+        </div>
+    `;
+  
+    const times = modal.querySelector('.modal__close');
+    times.addEventListener('click', () => document.body.removeChild(modal));
+    document.body.appendChild(modal);
+  }
+  
+  const msgModal = 'New Contract';
+  const msgElement = `
+    <input type="text" placeholder="Contract Name">
+    <select name="Company">
+        <option value="" disabled selected>Company Name</option>
+    </select>
+    <input type="text" placeholder="Address">
+    <input type="text" placeholder="Conditions">
+    <select name="assignee">
+        <option value="" disabled selected>Assignee</option>
+    </select>
+  `;
+  const msgPayload = [
+    {
+      label: 'Got it!',
+      onClick: (modal) => console.log('The button was clicked!'),
+      triggerClose: false,
+    },
+    {
+      label: 'Decline',
+      onClick: (modal) => console.log('DECLINED.'),
+      triggerClose: false,
+    },
+  ];
+  
+  document.querySelector('.modal__button').addEventListener('click', () => {
+    showModal(msgModal, msgElement, msgPayload);
+    document.querySelector(".header").style.background = "#00000004";
+    document.querySelector(".sidebar").style.background = "#00000004";
+    // document.querySelector(".header").style.filter= "blur(2px)";
+    // document.querySelector(".sidebar").style.filter = "blur(2px)";
+    // document.body.style.filter = "blur(2px)";
+  });

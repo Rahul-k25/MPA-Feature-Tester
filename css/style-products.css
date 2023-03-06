@@ -8,7 +8,7 @@ body{
 }
 .main-content__task{
     display: block;
-    margin: 91px auto;
+    margin: 91px auto 0;
     flex: 0 0 65%;
     padding-left: 130px;
 }

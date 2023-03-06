@@ -10,7 +10,7 @@ body{
 .main-content__task{
     display: block;
     margin-top: 91px;
-    flex: 0 0 80%;
+    flex: 0 0 71%;
     margin-left: 300px;
 }
 .task-header{
@@ -18,21 +18,13 @@ body{
     gap: 16px;
     justify-content: flex-end;
 }
-.svg-filter{
+.svg-icons{
     width: 24px;
     height: 24px;
+    fill: #7F8C8D;
 }
-.svg-bars{
-    width: 24px;
-    height: 24px;
-}
-.svg-search{
-    width: 24px;
-    height: 24px;
-}
-.svg-plus{
-    width: 24px;
-    height: 24px;
+.svg-icons:hover{
+    fill: #3498DB;
 }
 .tasks{
     display: flex;
@@ -141,6 +133,67 @@ body{
     color: #3498DB;
     text-decoration: underline;
 }
+/* modal window */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #00000080;
+    font-family: 'Poppins';
+    color: #7F8C8D;
+}
+  
+.modal__inner {
+    background: #ffffff;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 16px;
+}
+  
+.modal__top {
+    display: flex;
+    align-items: center;
+}
+  .modal__title {
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+  }
+  
+  .modal__close {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  .modal__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .modal__content input,
+  .modal__content select{
+    align-items: center;
+    padding: 10px 16px;
+    color: #7F8C8D;
+    border: 1px solid #7F8C8D;
+    border-radius: 4px;
+    font-size: 13px;
+  }
 .svg-hidden{
     max-width: 0;
 }
