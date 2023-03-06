@@ -16,7 +16,6 @@ window.onload=function(){
     toggleOpen.addEventListener('click', ()=>{
         text.forEach((ele) => {ele.style.display = 'none';})
         toggleOpen.classList.toggle('sidebar-toggle-close');
-        // toggleOpen.classList.remove('sidebar-toggle-open');
     });
 
     let toggleClose = document.querySelector('.sidebar-toggle-close');
@@ -25,8 +24,6 @@ window.onload=function(){
         console.log('wqe');
         toggleClose.addEventListener('click', ()=>{
             text.forEach((ele) => {ele.style.display = 'block';})
-            // toggleClose.classList.add('sidebar-toggle-open');
-            // toggleClose.classList.remove('sidebar-toggle-close');
         });
     }
 }

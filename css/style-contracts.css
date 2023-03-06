@@ -37,12 +37,9 @@ body{
 .tasks{
     display: flex;
     gap: 16px;
-    /* flex-flow: column wrap; */
     flex-wrap: wrap;
-    /* height: 590px; */
 }
 .task-item{  
-    /* min-width: 220px; */
     width: 530px;
     background-color: white;
     padding: 16px;
@@ -91,10 +88,8 @@ body{
     font-weight: 500;
     font-size: 15px;
     overflow-wrap: break-word;
-    /* word-wrap: break-word; */
     line-height: 22px;
     letter-spacing: 0.01em;
-    /* hyphens: auto; */
 }
 .task-item__desc{
     font-size: 13px;
