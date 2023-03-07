@@ -26,6 +26,8 @@ function showModal(titleHtml, contentHtml) {
     const close = modal.querySelector('.modal__close');
     close.addEventListener('click', () => {
         document.body.removeChild(modal)
+        // document.querySelector(".header").style.background = "#fff";
+        // document.querySelector(".sidebar").style.background = "#fff";
         document.querySelector(".header").style.filter = "blur(0)";
         document.querySelector(".sidebar").style.filter = "blur(0)";
     });
@@ -47,8 +49,8 @@ function showModal(titleHtml, contentHtml) {
 
   document.querySelector('.modal__button').addEventListener('click', () => {
     showModal(msgModal, msgElement);
-    document.querySelector(".header").style.background = "#00000004";
-    document.querySelector(".sidebar").style.background = "#00000004";
+    // document.querySelector(".header").style.background = "#00000004";
+    // document.querySelector(".sidebar").style.background = "#00000004";
     document.querySelector(".header").style.filter = "blur(5px)";
     document.querySelector(".sidebar").style.filter = "blur(5px)";
   });
