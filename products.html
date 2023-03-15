@@ -16,9 +16,20 @@
 </head>
 <body>
     <header class="header">
+        <h2 class="header__title">Feature Tester</h2>
+        <div class="header__profile">
+          <a href="#">
+            <i class="fa-regular fa-bell bell-icon"></i>
+          </a>
+          <a href="#">
+            <svg class="svg-avatar">
+              <use xlink:href="#svg-avatar"></use>
+            </svg>
+          </a>
+        </div>
     </header>
     <div class="main-content">
-        <section class="sidebar show" id="side-bar">
+        <section class="sidebar show sidebar-fixed" id="side-bar">
             <nav class="nav">
               <div class="nav_list">
                   <a href="dashboard.html" class="nav_link">
@@ -56,9 +67,6 @@
               <div class="header_toggle" id="header-toggle">
                 <svg class="svg-sidebar-icons svg-expand">
                   <use xlink:href="#svg-expand"></use>
-                </svg>
-                <svg class="svg-sidebar-icons svg-shrink">
-                  <use xlink:href="#svg-shrink"></use>
                 </svg><span class="nav_logo-name">Toggle sidebar</span>
               </div>
           </nav>

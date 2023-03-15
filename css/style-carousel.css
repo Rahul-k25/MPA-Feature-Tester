@@ -1,5 +1,5 @@
 .carousel {
-    width: 482px;
+    width: 600px;
     height: 350px;
     position: relative;
     overflow: hidden;
@@ -16,10 +16,11 @@
     padding: 0 20px;
   }
   .btn-left, .btn-right{
-    height: 80px;
-    width: 40px;
+    height: 60px;
+    width: 30px;
     background-color: rgba(230, 230, 230, 0.5);
     border: none;
+    border-radius: 4px;
   }
   .btn-left{
     content: '&lt;';
@@ -37,7 +38,7 @@
   }
   
   .carousel__card {
-    min-width: 482px;
+    min-width: 600px;
     height: 350px;
     margin-right: 1rem;
     display: inline-block;
