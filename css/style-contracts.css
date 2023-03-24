@@ -204,12 +204,12 @@ body{
   }
   .svg-down-arrow{
     position: absolute;
-    top: 306px;
+    top: 325px;
     right: 396px;
   }
   .svg-down-two{
     position: absolute;
-    top: 506px;
+    top: 520px;
     right: 396px;
   }
   .modal__content select{

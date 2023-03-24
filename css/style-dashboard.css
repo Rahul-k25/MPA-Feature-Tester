@@ -9,9 +9,6 @@ body{
     gap: 35px;
     position: fixed; */
     display: flex;
-    /* gap: 35px; */
-    /* position: fixed; */
-    /* overflow: hidden;*/
 }
 .container:nth-last-child(1){
     height: 100vh;
@@ -27,28 +24,14 @@ body{
 
 
 .main-content__tasks{
-    /* flex: 0 0 45%;
-    padding: 16px 24px;
-    background-color: white;
-    top: 91px;
-    height: calc(100vh - 115px);
-    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
-    margin-left: 280px;
-    list-style: none;
-    overflow-y: scroll;
-    position: absolute;
-    width: 700px;
-    border-radius: 5px; */
     flex: 0 0 50%;
     padding: 16px 24px;
     background-color: white;
     margin: 91px auto 0;
     height: calc(100vh - 115px);
     box-shadow: 6px 0px 18px rgb(0 0 0 / 6%);
-    /* margin-left: 280px; */
     list-style: none;
     overflow-y: scroll;
-    /* position: absolute; */
     width: 700px;
     border-radius: 5px;
 }
@@ -266,6 +249,7 @@ body{
 
 .svg-hidden{
     max-width: 0;
+    /* display: none; */
 }
 
 @media screen and (max-width: 1350px) {

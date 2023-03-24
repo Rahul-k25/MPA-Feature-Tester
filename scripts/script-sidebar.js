@@ -15,7 +15,7 @@ const showNavbar = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId);
   const nav = document.getElementById(navId);
   toggle.addEventListener("click", () => {
-    // nav.classList.toggle("show");
+    nav.classList.toggle("show");
   });
 };
 
