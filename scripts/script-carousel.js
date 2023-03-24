@@ -9,22 +9,22 @@ const cardCount = carousel.querySelectorAll("[data-target='card']").length;
 
 let offset = 0;
 const maxX = -(
-  (cardCount) * carouselWidth +
-  cardMarginRight * (cardCount) -
+  cardCount * carouselWidth +
+  cardMarginRight * cardCount -
   carouselWidth -
   cardMarginRight
 );
 
-leftButton.addEventListener('click', function () {
+leftButton.addEventListener("click", function () {
   if (offset !== 0) {
     offset += carouselWidth + cardMarginRight;
     carousel.style.transform = `translateX(${offset}px)`;
   }
 });
 
-rightButton.addEventListener('click', function () {
+rightButton.addEventListener("click", function () {
   if (offset !== maxX) {
     offset -= carouselWidth + cardMarginRight;
     carousel.style.transform = `translateX(${offset}px)`;
   }
-});     
+});

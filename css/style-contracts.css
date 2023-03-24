@@ -9,9 +9,9 @@ body{
 }
 .main-content__task{
     display: block;
-    margin-top: 91px;
+    margin: 91px auto 0;
     flex: 0 0 71%;
-    margin-left: 300px;
+    /* margin-left: 300px; */
 }
 .task-header{
     display: flex;
@@ -135,8 +135,8 @@ body{
 }
 /* modal window */
 .modal {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: -950px;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -148,25 +148,28 @@ body{
     backdrop-filter: blur(5px);
     font-family: 'Poppins';
     color: #7F8C8D;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
 }
-  
+  .modal-show{
+    top: 0;
+  }
 .modal__inner {
     background: #ffffff;
     width: 100%;
     max-width: 800px;
     overflow: hidden;
     border-radius: 4px;
-    padding: 16px;
+    padding:  25px 16px;
 }
   
 .modal__top {
     display: flex;
     align-items: center;
+    padding-bottom: 8px;
 }
   .modal__title {
     flex-grow: 1;
-    font-size: 20px;
-    font-weight: 500;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.01em;
@@ -179,6 +182,14 @@ body{
     background: none;
     border: none;
     outline: none;
+    gap: 6px;
+    font-size: 16px;
+    color: #7F8C8D;
+  }
+  .modal__close:hover,
+  .modal__close:hover .svg-icons{
+    color: #3498DB;
+    fill: #3498DB;
   }
   
   .modal__content {
@@ -186,6 +197,40 @@ body{
     flex-direction: column;
     gap: 16px;
   }
+  .svg-location{
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 10px;
+  }
+  .svg-down-arrow{
+    position: absolute;
+    top: 325px;
+    right: 396px;
+  }
+  .svg-down-two{
+    position: absolute;
+    top: 520px;
+    right: 396px;
+  }
+  .modal__content select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 50px;
+    display: block;
+    float: right;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+  }
+
   .modal__content input,
   .modal__content select{
     align-items: center;
@@ -193,7 +238,15 @@ body{
     color: #7F8C8D;
     border: 1px solid #7F8C8D;
     border-radius: 4px;
-    font-size: 13px;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    font-family: "Poppins";
+  }
+  input::placeholder{
+    color: #7F8C8D;
   }
 .svg-hidden{
     max-width: 0;

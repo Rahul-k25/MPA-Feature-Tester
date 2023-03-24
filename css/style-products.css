@@ -10,7 +10,6 @@ body{
     display: block;
     margin: 91px auto 0;
     flex: 0 0 65%;
-    padding-left: 130px;
 }
 .task-header{
     display: flex;
@@ -33,14 +32,17 @@ body{
 .svg-icons:hover{
     fill: #3498DB;
 }
+.sidebar-fixed{
+    position: fixed;
+}
 .products{
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
 }
 .products__item{
-    width: 200px;
-    height: 227px;
+    width: 230px;
+    height: 240px;
     padding: 16px;
     font-size: 15px;
     color: #323C47;

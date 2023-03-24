@@ -1,13 +1,14 @@
 body{
     font-family: "Poppins";
     background-color: rgb(238, 239, 240);
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .container{
-    display: flex;
+    /* display: flex;
     gap: 35px;
-    position: fixed;
+    position: fixed; */
+    display: flex;
 }
 .container:nth-last-child(1){
     height: 100vh;
@@ -23,16 +24,14 @@ body{
 
 
 .main-content__tasks{
-    flex: 0 0 45%;
+    flex: 0 0 50%;
     padding: 16px 24px;
     background-color: white;
-    top: 91px;
+    margin: 91px auto 0;
     height: calc(100vh - 115px);
-    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
-    margin-left: 280px;
+    box-shadow: 6px 0px 18px rgb(0 0 0 / 6%);
     list-style: none;
     overflow-y: scroll;
-    position: absolute;
     width: 700px;
     border-radius: 5px;
 }
@@ -45,7 +44,7 @@ body{
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
 }
   
 ::-webkit-scrollbar-track {
@@ -197,10 +196,15 @@ body{
 }
 
 .main-content__analysis{
-    flex: 0 0 20%;
+    /* flex: 0 0 20%;
     position: fixed;
     top: 91px;
-    margin-left: 1000px;
+    margin-left: 1000px; */
+    flex: 0 0 28%;
+    /* position: fixed; */
+    margin: 91px auto 0;
+    height: 100vh;
+    /* margin-left: 1000px;*/
 }
 
 .main-content__graph,
@@ -245,13 +249,14 @@ body{
 
 .svg-hidden{
     max-width: 0;
+    /* display: none; */
 }
 
 @media screen and (max-width: 1350px) {
-    .main-content__tasks{
+    /* .main-content__tasks{
         margin-left: 180px;
     }
     .main-content__analysis{
         margin-left: 900px;
-    }
+    } */
   }

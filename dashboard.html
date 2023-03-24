@@ -23,7 +23,19 @@
     />
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <h2 class="header__title">Feature Tester</h2>
+      <div class="header__profile">
+          <a href="#">
+              <i class="fa-regular fa-bell bell-icon"></i>
+          </a>
+          <a href="#">
+              <svg class="svg-avatar">
+                  <use xlink:href="#svg-avatar"></use>
+              </svg>
+          </a>
+      </div>
+    </header>
     <div class="container">
       <section class="sidebar show" id="side-bar">
         <nav class="nav">
@@ -61,11 +73,8 @@
               </a>
           </div>
           <div class="header_toggle" id="header-toggle">
-            <svg class="svg-sidebar-icons svg-expand">
+            <svg class=" svg-expand">
               <use xlink:href="#svg-expand"></use>
-            </svg>
-            <svg class="svg-sidebar-icons svg-shrink">
-              <use xlink:href="#svg-shrink"></use>
             </svg><span class="nav_logo-name">Toggle sidebar</span>
           </div>
       </nav>
@@ -123,7 +132,7 @@
             <div class="task-item">
               <div class="task-item__header">
                 <p class="task-item__title">Berlin University iPad Pro 2020 (25 items)</p>
-                <pdot class="task-item__progress">In Progress</p>
+                <p class="task-item__progress">In Progress</p>
               </div>
               <p class="task-item__location"><span>Location: </span>Germany, Berlin, Kaiserswerther Str. 16-18</p>
               <div class="task-item__profile">
@@ -640,24 +649,10 @@
       </symbol>
       <symbol
         id="svg-expand"
-        width="8"
-        height="12"
-        viewBox="0 0 8 12"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
           d="M7.41 1.41L6 0L0 6L6 12L7.41 10.59L2.83 6L7.41 1.41Z"
-        />
-      </symbol>
-      <symbol
-        id="svg-shrink"
-        width="8"
-        height="12"
-        viewBox="0 0 8 12"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M0.59 10.59L2 12L8 6L2 -5.24537e-07L0.590001 1.41L5.17 6L0.59 10.59Z"
         />
       </symbol>
       <symbol
@@ -676,20 +671,12 @@
         
       <symbol
         id="svg-circle"
-        width="8"
-        height="8"
-        viewBox="0 0 8 8"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <circle cx="4" cy="4" r="3" stroke="#109CF1" stroke-width="2" />
       </symbol>
       <symbol
         id="svg-graph"
-        width="300"
-        height="200"
-        viewBox="0 0 397 222"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
       >
@@ -855,10 +842,6 @@
       </symbol>
       <symbol
         id="svg-chart"
-        width="340"
-        height="200"
-        viewBox="0 0 445 272"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -912,8 +895,6 @@
       
     </svg>
   </body>
-  <!-- <script src="scripts/script-toggle.js"></script> -->
-  <script src="scripts/script-header.js"></script>
   <script src="scripts/script-sidebar.js"></script>
   <script src="scripts/script-scroll.js"></script>
 </html>
