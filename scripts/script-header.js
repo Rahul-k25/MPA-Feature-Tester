@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   const showNavbar = (toggleId, navId, bodyId) => {
-    const toggle = document.getElementById(toggleId),
-      nav = document.getElementById(navId),
-      bodypd = document.getElementById(bodyId);
+    const toggle = document.getElementById(toggleId);
+    const nav = document.getElementById(navId);
+    const bodypd = document.getElementById(bodyId);
     if (toggle && nav && bodypd) {
       toggle.addEventListener("click", () => {
-        console.log("hello");
         nav.classList.toggle("show");
         toggle.classList.toggle("bx-x");
         bodypd.classList.toggle("body-pd");
